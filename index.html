@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="brand.jpg" type="image/x-icon">
+    <title>Partha Pratim Jana</title>
+    <!-- tailwind css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/8c436c430f.js" crossorigin="anonymous"></script>
+    <!-- ionicons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+    <!-- style -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="bg-white">
+        <nav class="flex justify-between w-[100%] p-5">
+            <div class="logo">
+                <a href="index.html" class="text-2xl max-md:text-sm" style="font-family: 'Young Serif', serif;">Partha Pratim Jana
+                </a>
+              </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-4">
+                    <li class="list-none p-3"><a href="index.html"
+                        class="hover:duration-75 hover:text-slate-500">Home</a>
+                    </li>
+                    <li class="list-none p-3"><a href="films.html"
+                        class="hover:duration-75 hover:text-slate-500">Films</a></li>
+                    <li class="list-none p-3"><a href="photograph.html"
+                        class="hover:duration-75 hover:text-slate-500">Photographs</a></li>
+              
+                    <li class="list-none p-3"><a href="about.html"
+                        class="hover:duration-75 hover:text-slate-500">About</a>
+                    </li>
+                    <li class="list-none p-3"><a href="contact.html"
+                        class="hover:duration-75 hover:text-slate-500">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+
+    <!-- gallery -->
+    <div class="gallary block mb-10">
+        <div class="container w-5/12 h-96 mx-auto  mt-20 mb-10 max-sm:w-8/12">
+            <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                src="photo.jpg" />
+        </div>
+    </div>
+
+    <!-- socials -->
+    <div class="socials flex flex-row justify-center">
+        <li class="list-none p-2"><a href="" class="hover:duration-75 hover:text-slate-500"><i
+                    class="fa-brands fa-facebook text-xl"></i></a>
+        </li>
+        <li class="list-none p-2"><a href="" class="hover:duration-75 hover:text-slate-500"><i
+                    class="fa-brands fa-instagram text-xl"></i></a></li>
+        <li class="list-none p-2"><a href="" class="hover:duration-75 hover:text-slate-500"><i
+                    class="fa-brands fa-linkedin text-xl"></i></a>
+        </li>
+        <li class="list-none p-2"><a href="" class="hover:duration-75 hover:text-slate-500"><i
+                    class="fa-brands fa-youtube text-xl"></i></a>
+        </li>
+        <li class="list-none p-2"><a href="mailto:heymanpartha@gmail.com"
+                class="hover:duration-75 hover:text-slate-500"><i
+                    class="fa-regular fa-envelope text-xl"></i></a>
+        </li>
+    </div>
+    <!-- footer -->
+    <div class="footer text-sm relative w-full top-3 px-2">
+        <p class="text-slate-200">made by <a href="https://agradip.netlify.app/" class="hover:text-red-500">Agradip
+                Jana</a></p>
+    </div>
+
+   <script src="main.js"></script>
+</body>
+
+</html>

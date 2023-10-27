@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="brand.jpg" type="image/x-icon">
+  <title>Partha Pratim Jana</title>
+  <!-- tailwind css-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&family=Young+Serif&display=swap"
+    rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/8c436c430f.js" crossorigin="anonymous"></script>
+<!-- ionicons -->
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  <!-- style -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="bg-white">
+    <nav class="flex justify-between  w-[100%] p-5 mx-auto">
+        <div class="logo">
+            <a href="index.html" class="text-4xl max-md:text-sm" style="font-family: 'Young Serif', serif;">Partha Pratim Jana
+            </a>
+          </div>
+        <div
+            class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-4">
+                <li class="list-none p-3"><a href="index.html"
+                    class="hover:duration-75 hover:text-slate-500">Home</a>
+                </li>
+                <li class="list-none p-3"><a href="films.html"
+                    class="hover:duration-75 hover:text-slate-500">Films</a></li>
+                <li class="list-none p-3"><a href="photograph.html"
+                    class="hover:duration-75 hover:text-slate-500">Photographs</a></li>
+          
+                <li class="list-none p-3"><a href="about.html"
+                    class="hover:duration-75 hover:text-slate-500">About</a>
+                </li>
+                <li class="list-none p-3"><a href="contact.html"
+                    class="hover:duration-75 hover:text-slate-500">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex items-center gap-6">
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+</header>
+
+  <!-- Photographs -->
+  <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+  <div class="bg-white z-10">
+    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <!-- <h2 class="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2> -->
+
+      <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        <div class="group relative">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img
+              src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/337165856_249425207511173_8063063429833857128_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=4JdQBWvYCIUAX8zaiBA&_nc_ht=scontent.fccu3-1.fna&oh=00_AfCLLFpswronXGR1_mWkaKTXQ1WFhQbdr2E-uBxB2fYoLA&oe=65329894"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  A Rainy Day
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div
+            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img
+              src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/336385804_1182439512462486_4110510435799551575_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=1ZQAaKFNIvAAX9h0EoZ&_nc_ht=scontent.fccu3-1.fna&oh=00_AfDteH8yevFWxZP8c6EusUHX3OuEYSGUkxFxAeC2UTUXVA&oe=6532DDE9"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  A Fair
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div
+            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img
+              src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/325204787_678143797122873_6535960080801864873_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=s9EHurN1VLYAX9oFIp0&_nc_ht=scontent.fccu3-1.fna&oh=00_AfDRpjbfhem4fs2evjsSfVYw4z1_dabW8mEOEkpBPYIRJQ&oe=6532930Ehttps://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/325204787_678143797122873_6535960080801864873_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=s9EHurN1VLYAX9oFIp0&_nc_ht=scontent.fccu3-1.fna&oh=00_AfDRpjbfhem4fs2evjsSfVYw4z1_dabW8mEOEkpBPYIRJQ&oe=6532930E"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Faces
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div
+            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img
+              src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/322506574_2525005897651774_5784759883426209016_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=urhJPbVZK8QAX8I_J8I&_nc_ht=scontent.fccu3-1.fna&oh=00_AfAqcCAUC0G8vvR-ZUOZedexf1uAh6HRSto33t-zKY1Irg&oe=65334A98"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  মাঠ
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div
+            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img
+              src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/321610086_5637898239621441_4072302790791796134_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=qfEgvTycfRgAX-2XqBX&_nc_oc=AQmuiVCTgmu1FPS4DMmj7ejgVZg3lILzo9pIecduLKJHGYNnXjCuX6SR76p-NrTNm-4&_nc_ht=scontent.fccu3-1.fna&oh=00_AfDn9fvVzPcU7R48lKuH_5kiYMXbOqXLyIIp6GwcTdvaqA&oe=65325DED"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Stories Of Street.
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div
+            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img
+              src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/317531802_1531209040679550_8760201751549339500_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jH3EKfh_8xsAX85aR0s&_nc_ht=scontent.fccu3-1.fna&oh=00_AfD_LwP9tvbAFFvvYtbC5FLEa3KT4Qs7tY_vkrfZfi1wtQ&oe=6533F94A"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Winter/22
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div
+            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img
+              src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/344674622_1717154342093812_3764587946749373143_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=HSDMFsogsVQAX_gtzKY&_nc_ht=scontent.fccu3-1.fna&oh=00_AfD6LZk8jVkIL971QzIP0m6f00mUi1dTKVlKQc9E4mB2Ng&oe=6532ACC8"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Delhi 2023
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div
+            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img
+              src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/314650924_1514726108994510_7971322104193641659_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=OcLDXBPfKIwAX8eWfuf&_nc_ht=scontent.fccu3-1.fna&oh=00_AfBR5NpSahiJcbywHxDkmk_wNbk23qsZNXqfKQmYt9zWYA&oe=6533EE28"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Roots.
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div
+            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img
+              src="https://scontent.fccu3-1.fna.fbcdn.net/v/t1.6435-9/146259708_1096072800859845_3661318445408112891_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0bb214&_nc_ohc=pXuPwCkz-3YAX9yFnbP&_nc_ht=scontent.fccu3-1.fna&oh=00_AfDWJaeCAq0aaDLuLg0JQbVi_Ju8xdIjgjuMsN3590Wtbw&oe=65559D72"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  PHONOMANIAC
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div
+            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img
+              src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/294936118_1438185453315243_5800834613169826855_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=MKa3L4GYRTcAX8F5y0X&_nc_ht=scontent.fccu3-1.fna&oh=00_AfANSpz9y5xWCy93pHXuSu1-Ta21gMekpYH1JJeFSOGuLg&oe=65324E69"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  GRAM PUJO, 2022.
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div
+            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img
+              src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/296923990_1444524269348028_2465061114554713961_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=o9TKNjmkwg0AX8aY0F5&_nc_ht=scontent.fccu3-1.fna&oh=00_AfBliAAXP_WLYDSvwU64paymRK-9Dgb76FrrwplQZu4CrA&oe=6532B379"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  A summer afternoon.
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div
+            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+            <img
+              src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/320475214_1261371057771481_4629560812962318988_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=swtAfO8_rR4AX9RZk94&_nc_ht=scontent.fccu3-1.fna&oh=00_AfCmECMbS8JtiELmDPagfxqHbrYK-s2sgg7UN158t-aDWQ&oe=65340107"
+              alt="Front of men&#039;s Basic Tee in black."
+              class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Khejuri'22
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- More products... -->
+      </div><br>
+    </div>
+  </div>
+
+
+
+  <!-- footer -->
+  <div class="footer text-sm relative w-full bottom-5 px-2">
+    <div class="text-slate-300 text-center">All Rights Reserved <a href="https://agradip.netlify.app/"
+        class="hover:text-red-500">© Partha Pratim Jana</a></div>
+    <p class="text-slate-200 text-center">made by <a href="https://agradip.netlify.app/"
+        class="hover:text-red-500">Agradip Jana</a></p>
+  </div>
+
+  
+  <script src="main.js"></script>
+</body>
+
+</html>

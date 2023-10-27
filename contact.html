@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="brand.jpg" type="image/x-icon">
+  <title>Partha Pratim Jana</title>
+  <!-- tailwind css-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&family=Young+Serif&display=swap"
+    rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/8c436c430f.js" crossorigin="anonymous"></script>
+  <!-- ionicons -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  <!-- style -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="bg-white z-50">
+    <nav class="flex justify-between  w-[100%] p-5 mx-auto">
+      <div class="logo">
+        <a href="index.html" class="text-4xl max-md:text-sm" style="font-family: 'Young Serif', serif;">Partha Pratim
+          Jana
+        </a>
+      </div>
+      <div
+        class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-4">
+          <li class="list-none p-3"><a href="index.html" class="hover:duration-75 hover:text-slate-500">Home</a>
+          </li>
+          <li class="list-none p-3"><a href="films.html" class="hover:duration-75 hover:text-slate-500">Films</a></li>
+          <li class="list-none p-3"><a href="photograph.html"
+              class="hover:duration-75 hover:text-slate-500">Photographs</a></li>
+
+          <li class="list-none p-3"><a href="about.html" class="hover:duration-75 hover:text-slate-500">About</a>
+          </li>
+          <li class="list-none p-3"><a href="contact.html" class="hover:duration-75 hover:text-slate-500">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-6">
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+      </div>
+  </header>
+
+  <!-- Contact form -->
+  <!-- 
+    =======================================================================
+
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+
+    =======================================================================
+ -->
+
+  <div class="flex items-center min-h-screen bg-white mt-10">
+    <div class="container m-auto">
+      <div class="max-w-xl mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+        <div class="text-center">
+          <h1 class="my-3 text-3xl font-semibold text-gray-700">
+            Contact Me
+          </h1>
+          <p class="text-gray-400 dark:text-gray-400">
+            Fill up the form below to send us a message.
+          </p>
+        </div>
+        <div class="m-7">
+          <form action="https://api.web3forms.com/submit" method="POST" id="form">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+            <div class="flex mb-6 space-x-4">
+              <div class="w-full md:w-1/2">
+                <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">First Name</label>
+                <input type="text" name="name" id="first_name" placeholder="Agradip" required
+                  class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+              </div>
+              <div class="w-full md:w-1/2">
+                <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Last Name</label>
+                <input type="text" name="last_name" id="lname" placeholder="Jana" required
+                  class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+              </div>
+            </div>
+
+            <div class="flex mb-6 space-x-4">
+              <div class="w-full md:w-1/2">
+                <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="you@company.com" required
+                  class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+              </div>
+
+              <div class="w-full md:w-1/2">
+                <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Phone Number</label>
+                <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required
+                  class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+              </div>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+
+              <textarea rows="5" name="message" id="message" placeholder="Your Message"
+                class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                required></textarea>
+            </div>
+            <div class="mb-6">
+              <button type="submit"
+                class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                Send Message
+              </button>
+            </div>
+            <p class="text-base text-center text-gray-400" id="result"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- socials -->
+  <div class="socials flex flex-row justify-center">
+    <li class="list-none p-2"><a href="" class="hover:duration-75 hover:underline hover:text-slate-500"><i
+          class="fa-brands fa-facebook text-xl"></i></a>
+    </li>
+    <li class="list-none p-2"><a href="" class="hover:duration-75 hover:underline hover:text-slate-500"><i
+          class="fa-brands fa-instagram text-xl"></i></a></li>
+    <li class="list-none p-2"><a href="" class="hover:duration-75 hover:underline hover:text-slate-500"><i
+          class="fa-brands fa-linkedin text-xl"></i></a>
+    </li>
+    <li class="list-none p-2"><a href="" class="hover:duration-75 hover:underline hover:text-slate-500"><i
+          class="fa-brands fa-youtube text-xl"></i></a>
+    </li>
+    <li class="list-none p-2"><a href="mailto:heymanpartha@gmail.com"
+        class="hover:duration-75 hover:underline hover:text-slate-500"><i
+          class="fa-regular fa-envelope text-xl"></i></a>
+    </li>
+  </div>
+  <!-- footer -->
+  <div class="footer text-sm relative w-full top-3 px-2">
+    <p class="text-slate-200">made by <a href="https://agradip.netlify.app/" class="hover:text-red-500">Agradip Jana</a>
+    </p>
+  </div>
+
+  <script>
+    const form = document.getElementById("form");
+    const result = document.getElementById("result");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      result.innerHTML = "Please wait...";
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            result.innerHTML = json.message;
+            result.classList.remove("text-gray-500");
+            result.classList.add("text-green-500");
+          } else {
+            console.log(response);
+            result.innerHTML = json.message;
+            result.classList.remove("text-gray-500");
+            result.classList.add("text-red-500");
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          result.innerHTML = "Something went wrong!";
+        })
+        .then(function () {
+          form.reset();
+          setTimeout(() => {
+            result.style.display = "none";
+          }, 5000);
+        });
+    });
+  </script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
